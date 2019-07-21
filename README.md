@@ -1,3 +1,9 @@
+# Notes for J
+
+Intent to merge 'first' theme derived from here: https://zwbetz.com/make-a-hugo-blog-from-scratch/ with solarized theme ...
+( and maybe the popular ananke theme )
+
+
 # Solar Theme for Hugo
 
 A minimalistic theme for [Hugo](https://gohugo.io/) blogs, fork of

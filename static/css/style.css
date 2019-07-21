@@ -264,14 +264,16 @@ h3 {
 
 /*** Structure ***/
 #page {
-	width: 500px;
+	/* width: 500px; */
+	width: 650px;
 	margin: 0 auto;
 	position: relative;
 }
 
 #header {
 	width: 650px;
-	padding-left: 150px;
+	/* padding-left: 150px; */
+	padding-left: 75px;
 	margin: 40px auto 50px auto;
 	background: url(/img/logo.svg) no-repeat center left;
 	background-size: auto 100%;
@@ -308,15 +310,21 @@ h3 {
 }
 
 #footer {
-	width: 500px;
+	/* width: 500px; */
+	width: 650px;
 	margin: 20px auto;
+	margin-left: 37px;
+	margin-right: 37px;
 	padding-top: 10px;
 	font-size: 0.85em;
 	border-top: 1px solid #073642;
 }
 
 #content {
-	width: 500px;
+	/* width: 500px; */
+	width: 650px;
+	/* padding-left: 75px; */
+	padding-left: 37px;
 	margin: 0 auto;
 }
 
@@ -614,4 +622,7 @@ pre[class*='language-'] {
 }
 .token.entity {
 	cursor: help;
+}
+
+.feather {
 }
