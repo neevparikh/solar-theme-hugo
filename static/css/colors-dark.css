@@ -1,7 +1,8 @@
-html,
-body {
-	background-color: #002a35;
-	color: #839496;
+
+html {
+	/* https://stackoverflow.com/questions/3221561/eliminate-flash-of-unstyled-content */
+	visibility: visible;
+	opacity: 1;
 }
 
 ::selection {
@@ -67,4 +68,10 @@ blockquote {
 
 .hljs {
 	background: none;
+}
+
+html,
+body {
+	background-color: #002a35;
+	color: #839496;
 }

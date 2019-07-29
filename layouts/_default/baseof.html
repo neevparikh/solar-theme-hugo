@@ -4,6 +4,16 @@
 	<body>
 		<header id="header">
 			<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+
+			<div id='css-switch'>
+			<a href="#" onclick="switch_style('light'); return false">Light Theme</a>
+			<a href="#" onclick="switch_style('dark'); return false">Dark Theme</a>
+			<!--
+			<button type="button" onclick="switch_style('light');return false;" name="theme" value="Light Theme" id="light">Light Theme</button>
+			<button type="button" onclick="switch_style('dark');return false;" name="theme" value="Dark Theme" id="dark">Dark Theme</button> 
+			-->
+			</div>
+
 			<p>{{ .Site.Params.Description }}</p>
 			{{ partial "nav.html" . }}
 		</header>
