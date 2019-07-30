@@ -66,6 +66,15 @@ blockquote {
 	border-color: #073642;
 }
 
+pre code {
+	background-color: #002a35; /* #eee8d5;
+	color: #657b83;*/
+	border: 1px solid #073642; /*#2aa198;*/
+	border-radius: 3px 3px 3px 3px;
+	overflow: auto;
+	padding: 6px 10px;
+}
+
 .hljs {
 	background: none;
 }
