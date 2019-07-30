@@ -2,19 +2,11 @@
 
 var style_cookie_name = "style" ;
 var style_cookie_duration = 30 ;
-// var style_domain = "sourceapprentice.com" ;
-var style_domain = "localhost" ;
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
 
-function get_style_from_cookie()
-{
-  var css_title = get_cookie( style_cookie_name );
-  return css_title
-}
-
-function switch_style ( css_title )
+function switch_style ( style_domain, css_title )
 {
 // You may use this script on your site free of charge provided
 // you do not remove this notice or the URL below. Script from
@@ -37,7 +29,7 @@ function switch_style ( css_title )
 
 function set_style_from_cookie()
 {
-  var css_title = get_cookie( style_cookie_name );
+  var css_title = get_cookie_ext( style_cookie_name );
   if (css_title.length) {
     switch_style( css_title );
   }
@@ -56,9 +48,9 @@ function set_cookie ( cookie_name, cookie_value,
                        "; path=/" + domain_string ;
 }
 
-function get_cookie ( cookie_name )
+function get_cookie_ext ( cookie_name )
 {
-    // https://www.thesitewizard.com/javascripts/cookies.shtml
+  // https://www.thesitewizard.com/javascripts/cookies.shtml
 	var cookie_string = document.cookie ;
 	if (cookie_string.length != 0) {
 		var cookie_array = cookie_string.split( '; ' );
