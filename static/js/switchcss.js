@@ -63,3 +63,25 @@ function get_cookie_ext ( cookie_name )
 	}
 	return '' ;
 }
+
+
+function insert_opposing_link (style_domain)
+{
+  var css_switch_links = document.getElementById("css-switch-links");
+  var css_title = get_cookie(style_cookie_name) || 'light'
+
+  if (css_title == 'light'){
+    css_opposition = 'dark'
+  }else{
+    css_opposition = 'light'
+  }
+
+  var aTag = document.createElement('a');
+  aTag.setAttribute('href',"#");
+  aTag.innerHTML = css_opposition.charAt(0).toUpperCase() + css_opposition.slice(1) + ' Theme';
+  aTag.onclick = function(event){
+    switch_style(style_domain, css_opposition); return false
+  }
+  css_switch_links.appendChild(aTag);
+}
+

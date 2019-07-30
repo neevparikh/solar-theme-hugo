@@ -5,11 +5,7 @@
 		<header id="header">
 			<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
 
-			<div id='css-switch-links' style="visibility: hidden; opacity: 0">
-			<!-- do not show css switching if no javascript -->
-			<a href="#" onclick="switch_style('{{ .Site.Params.domain }}', 'light'); return false">Light Theme</a>
-			<a href="#" onclick="switch_style('{{ .Site.Params.domain }}', 'dark'); return false">Dark Theme</a>
-			</div>
+			<div id='css-switch-links'></div> 
 
 			<p>{{ .Site.Params.Description }}</p>
 			{{ partial "nav.html" . }}
@@ -37,9 +33,7 @@
 		{{ partial "feather-script.html" . }}
 
 		<script>
-			var css_switch_links = document.getElementById("css-switch-links");
-			css_switch_links.style.visibility = 'visible';
-			css_switch_links.style.opacity = 1;
-		</script>
+		    insert_opposing_link('{{ .Site.Params.domain }}');
+  		</script>
 	</body>
 </html>
