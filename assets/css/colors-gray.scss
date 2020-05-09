@@ -1,7 +1,9 @@
-html {
-	/* https://stackoverflow.com/questions/3221561/eliminate-flash-of-unstyled-content */
-	visibility: visible;
-	opacity: 1;
+@import 'layout';
+
+html,
+body {
+	background-color: #222;
+	color: #839496;
 }
 
 ::selection {

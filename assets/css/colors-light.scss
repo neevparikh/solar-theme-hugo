@@ -1,12 +1,13 @@
+@import 'layout';
 
-html {
-	/* https://stackoverflow.com/questions/3221561/eliminate-flash-of-unstyled-content */
-	visibility: visible;
-	opacity: 1;
+html,
+body {
+	background-color: #fdf6e3;
+	color: #839496;
 }
 
 ::selection {
-	background: rgba(255, 255, 255, 0.05);
+	background: rgba(0, 0, 0, 0.05);
 }
 
 a,
@@ -14,17 +15,17 @@ a:visited,
 a:active,
 a code {
 	color: #2aa198;
-	border-color: #073642;
+	border-color: #eee8d5;
 }
 
 a:hover {
-	background-color: #073642;
-	border-color: #073642;
+	background-color: #eee8d5;
+	border-color: #eee8d5;
 	color: #2aa198;
 }
 
 hr {
-	border-color: #073642;
+	border-color: #eee8d5;
 }
 
 h1,
@@ -40,9 +41,8 @@ h1 a:active {
 }
 
 h1 a:hover {
-	background-color: #073642;
-	border-color: #073642;
-	color: #cb4b16;
+	background-color: #eee8d5;
+	border-color: #eee8d5;
 }
 
 article h1 a.anchor {
@@ -59,17 +59,17 @@ blockquote {
 
 #sidebar a:hover span {
 	color: #2aa198;
-	background-color: #073642;
+	background-color: #eee8d5;
 }
 
 #footer {
-	border-color: #073642;
+	border-color: #eee8d5;
 }
 
 pre code {
-	background-color: #002a35; /* #eee8d5;
-	color: #657b83;*/
-	border: 1px solid #073642; /*#2aa198;*/
+	background-color: #eee8d5;
+	color: #657b83;
+	border: 1px solid #d6ceb6;
 	border-radius: 3px 3px 3px 3px;
 	overflow: auto;
 	padding: 6px 10px;
@@ -81,6 +81,6 @@ pre code {
 
 html,
 body {
-	background-color: #002a35;
+	background-color: #fdf6e3;
 	color: #839496;
 }
